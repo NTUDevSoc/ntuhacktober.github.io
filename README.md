@@ -1,6 +1,11 @@
-# ntuhacktober.github.io
-The NTU Hacktober repo for students wanting to contribute
-
+# Hacktoberfest ft. DevSoc
+The NTU Hacktober repo for students wanting to contribute and get involved with open source.  
 This is here for people learning to use GitHub and perform pull requests or any DevSOC members wishing to contribute in Hacktober
 
-Find our website here: https://devsoc.co.uk
+### Important Resources:
+[Hacktoberfest Website](https://hacktoberfest.digitalocean.com/)  
+[How to Create a Pull Request](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)
+
+
+### Our Links:
+[DevSoc Website](https://devsoc.co.uk)
