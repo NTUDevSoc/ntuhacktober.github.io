@@ -5,3 +5,7 @@ This is here for people learning to use GitHub and perform pull requests or any 
 ### Important Resources:
 [Hacktoberfest Website](https://hacktoberfest.digitalocean.com/)  
 [How to Create a Pull Request](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)
+
+
+### Our Links:
+[DevSoc Website](https://devsoc.co.uk)
