@@ -1,24 +1,9 @@
 body {
-    background-color: #659DBD;
+    background-color: #ffffff;
     text-align: center;
 }
 
-h1 {
-    color: #FBEEC1;
-    font-family: "Candara", Arial, SansSerif;
-}
 
-h2 {
-    color: white;
-    font-family: "Candara", Arial, SansSerif;
-    font-size: 18px;
-}
-
-h3 {
-    color: white;
-    font-family: "Candara", Arial, SansSerif;
-    font-size: 14px;
-}
 
 p {
     color: white;
@@ -30,22 +15,12 @@ p {
 }
 
 
-.icons{
-    display:inline-block;
-    width: 150px;
-    height: 150px;
-    margin: 20px;
-}
-
-a {
-    font-family: "Candara", Arial, SansSerif;
-    text-decoration: none;
-    font-size: 18px;
-    text-decoration-color: white;
-    color: white;
-}
-
 a:hover {
     text-decoration: none;
-    color: #FBEEC1;
+    color: #000000;
+    transform: scale(1.5);
+}
+
+.fa-fw{
+    color: #102542;
 }
