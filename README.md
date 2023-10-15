@@ -9,3 +9,4 @@ This is here for people learning to use GitHub and perform pull requests or any 
 
 ### Our Links:
 [DevSoc Website](https://devsoc.co.uk)
+[DCHP++](https://devsoc.co.uk/DCHP/introduction.html)
