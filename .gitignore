@@ -1,4 +1,5 @@
 # Exclude the entire .vscode directory
 .vscode/
+.DS_Store
 
 

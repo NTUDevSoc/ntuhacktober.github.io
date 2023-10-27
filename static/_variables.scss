@@ -3,8 +3,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css');
 
 
-
-
 //CSS VARIABLES 
 
 //FONT STYLES
@@ -24,3 +22,17 @@ $fw-extra-bold :800;
 
 
 //COLORS
+//dark themes
+$clr-very-dark-blue:hsl(235, 21%, 11%);
+$clr-very-dark-desaturated-blue:hsl(235, 24%, 19%);
+$clr-lght-gray-blue:hsl(234, 39%, 85%);
+$clr-lght-gray-blue-hover:hsl(236, 33%, 92%);
+
+//Primary colors
+$clr-bgh-blue :hsl(220, 98%, 61%);
+$clr-bg-lg :linear-gradient(to right , hsl(243, 45%, 24%) , hsl(251, 26%, 56%)) ;
+
+//light themes
+$clr-lght-gray:hsl(0, 0%, 98%);
+$clr-very-lght-grayish-blue :hsl(236, 33%, 92%);
+$clr-lght-grayish-blue :hsl(233, 11%, 84%);

@@ -1,2 +1,280 @@
+// required imports
 @import './reset';
 @import './variables';
+
+
+//mymixin
+@mixin flex($direction){
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin grid(){
+    display: grid;
+    place-items: center;
+}
+
+body {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+
+p {
+    color: white;
+    font-family: "Verdana", Arial, SansSerif;
+    font-size: 10px;
+    margin: auto;
+    width: 50%;
+    font-style: italic;
+}
+
+
+.header-column{
+    @include flex(column);
+    align-items: center;
+    justify-content: center;
+    row-gap: clamp(1.25rem , 1.3vw , 1.4rem );
+
+    > .lead{
+        font-family: $fs-poppins;
+        font-weight: 400;
+        font-size: clamp(1.2rem , 1.25vw , 1.3rem);
+        color: $clr-very-dark-desaturated-blue;
+
+    }
+    
+}
+
+.toggle-swtich-column{
+    @include flex(column);
+    align-items: center;
+    justify-content: center;
+    row-gap: clamp(0.8rem , 0.85vw , 0.9rem);
+
+    > .main-heading{
+        cursor: pointer;
+        font-family: $fs-rale;
+        font-weight: 700;
+        line-height: 2rem;
+    }
+
+    > .icon-style{
+
+        &:hover , :active{
+            cursor: pointer;
+
+        }
+    }
+}
+
+.social-icons{
+    @include flex(row);
+    margin-top: 1.5rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.5rem;
+
+    > a{
+        text-decoration: none;
+        color: $clr-very-dark-desaturated-blue;
+        cursor: pointer;
+        
+
+        &:hover , :active{
+            color: $clr-lght-gray-blue;
+            transform: scale(1.3);
+            transition: all .5s;
+        }
+    }
+
+}
+
+.dino-image-with-download-link{
+    @include flex(column);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    // background-color: red;  
+    margin: 1.4rem auto;
+    
+
+}
+
+.dino-image{
+    position: relative;
+    right:1%;
+}
+
+
+
+.btn-for-user-image{
+    width: 10rem;
+    height: 4rem;
+    background:$clr-bg-lg;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    right: 16%;
+    font-family: $fs-rale;
+    display: grid;
+    place-items: center;
+    border-radius: 2rem;
+    padding: 0.3rem 0.5rem;
+    font-size: clamp(0.8rem , 0.9vw , 1rem);
+    border: none;
+    box-shadow: 0px 12px 25px rgba(23, 53, 34, 0.3);
+
+    > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &:hover , :active{
+        box-shadow: 0px 15px 35px rgba(37, 43, 61, 0.6);
+        transition: all .5s;
+    }
+
+}
+
+.icons-curved{
+    font-size: 5rem;
+    position: absolute;
+    top: 6%;
+    right: 20%;
+    transform:rotate(180deg);
+}
+
+
+
+
+.issued-requested-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    
+
+    > .issues-container{
+        width: 85%;
+        height: 15rem;
+        height: 13rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        background:$clr-bg-lg;
+        padding: 1rem 0.8rem;
+        row-gap: 0.4rem;
+        text-align: center;
+        box-shadow: 0px 12px 25px rgba(23, 53, 34, 0.3);
+
+        > .issues-header{
+            font-family: $fs-rale;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: 0.1rem;
+            font-size:clamp(1.4rem , 1.5vw , 1.5rem) ;
+            
+        }
+
+        > .issues-explained{
+            width: 100%;
+            font-family: $fs-open;
+            font-weight: 400;
+            font-size: clamp(0.95rem, 1.15vw , 1.2rem);
+            font-style: normal;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px) {
+    .toggle-swtich-column{
+        width: 100%;
+        @include flex(row);
+        justify-content: space-between;
+        align-items: center;
+
+        > .main-heading{
+            font-size: clamp(2rem, 2.4vw , 2.7rem);
+        }
+        
+    }
+
+    .issued-requested-column{
+        display: grid;
+        grid-template-columns: repeat(minmax(auto-fit ,1fr));
+        @include grid();
+        row-gap: 2rem;
+
+        > .issues-container{
+            padding: 1.5rem 2rem ;
+            // width: 25rem;
+            // height: 15rem;
+        }
+    }
+    
+    
+}
+@media (max-width:1400px){
+    .btn-for-user-image{
+        display: none;
+    }
+    .icons-curved{
+        display: none;
+    }
+
+}
+
+
+
+@media (min-width:1400px) {
+    .toggle-swtich-column{
+        width: 100%;
+        @include flex(row);
+        justify-content: space-between;
+        align-items: center;
+
+        > .main-heading{
+            font-size: clamp(2rem, 2.4vw , 2.7rem);
+        }
+        
+    }
+
+    .issued-requested-column{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(40% ,1fr));
+        @include grid();
+        row-gap: 1.5rem;
+
+        > .issues-container{
+            padding: 1.5rem 2rem ;
+            width: 25rem;
+            height: 15rem;
+        }
+    }
+    
+    
+}

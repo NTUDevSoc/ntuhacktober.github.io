@@ -20,7 +20,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Poppins:wght@100;400;500;700&family=Raleway:wght@100;300;500;700&display=swap" rel="stylesheet">
 
         <!--------------------- Stylesheet --------------------->
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="static/styles.css">
 
         <!--------------------- Title --------------------->
         <title>DevSOC Hacktober</title>
@@ -29,59 +29,86 @@
     <body>
         <div class = "container mt-4">
             <div class = "row justify-content-center">
-                <div class = "col-12">
-                    <div class = "display-1" style="font-size:28px; font-family: 'Open Sans', sans serif">[}EVSOC_ HACKTOBERFEST 2023</div>
+                <div class = "header-column col-12">
+
+                    <div class="toggle-swtich-column">
+                        <div class = "main-heading display-1" style="font-size:28px; font-family: 'Open Sans', sans serif">[}EVSOC_ HACKTOBERFEST 2023</div>
+                        <img src="images/icon-moon.svg" 
+                        alt="icon for moon" 
+                        class="moon-icon">
+                    </div>
+                    
                     <br>
                     <div class = "lead">This site is here for students learning to use github and wanting to contribute to hacktoberfest</div>
                     <div class = "lead"><strong>Original Contributors:</strong> Hannah, Peter & Stephen</div>
                     <div class = "lead">Updated for 2023 by Teti</div>
-                    <img src = "images/PixelDino.png" style = "width:250px">
+                    
+
                 </div>
+            </div>
+
+
+            <div class="dino-image-with-download-link">
+                <img src = "images/PixelDino.png" style = "width:250px" class="dino-image">
+
+                <button class="btn-for-user-image">
+                    <a href="https://devsoc.co.uk/DCHP/introduction.html">click on me to downlaod DCHP++</a>
+                </button>
+                <img src="images/curved-arrow-2261.svg" 
+                alt="an icon that has been curved"
+                class="icons-curved">
             </div>
 
             <div class = "row justify-content-center">
                 <div class = "h4" style="font-size:28px; font-family: 'Open Sans', sans serif">Modifications:</div>
             </div>
-            
-            <div class = "row justify-content-center">
-                <div class = "col-md-5">
-                    <div class="card text-white bg-dark mx-4 mb-3">
-                        <div class="card-body">
-                        <h4 class="card-title"><strong>Issue #1</strong></h4>
-                        <lead class="card-text"><strong>"Unresponsive Design Enhancement!"</strong> DevDino's website looks great on various devices and screen sizes. Lets change that >:3</lead>
-                        </div>
-                    </div>
+
+            <div class="issued-requested-column">
+
+
+
+                <div class="issues-container first-issue">
+                    <p class="issues-header">
+                        Issue #1
+                    </p>
+                    <p class="issues-explained">
+                        <strong>"Unresponsive Design Enhancement!"</strong> DevDino's website looks great on various devices and screen sizes. Lets change that >:3
+                    </p>
                 </div>
-                <div class = "col-md-5">
-                    <div class="card text-white bg-dark mx-4 mb-3">
-                        <div class="card-body">
-                        <h4 class="card-title"><strong>Issue #2</strong></h4>
-                        <lead class="card-text"><strong>"Its a bit too bright in here..." </strong> Implement a dark mode toggle feature for the website, to provide users with an alternative theme</lead>
-                        </div>
-                    </div>
+
+                <div class="issues-container second-issue">
+                    <p class="issues-header">
+                        Issue #2
+                    </p>
+                    <p class="issues-explained">
+                        <strong>"Its a bit too bright in here..."</strong> Implement a dark mode toggle feature for the website, to provide users with an alternative theme
+                    </p>
+
                 </div>
-                <div class = "col-md-5">
-                    <div class="card text-white bg-dark mx-4 mb-3">
-                        <div class="card-body">
-                        <h4 class="card-title"><strong>Issue #3</strong></h4>
-                        <lead class="card-text"><strong>"Upgrades people, upgrades!"</strong> Do some necessary upgrades and explore the wonders on Bootstrap 5 by modifying this template</lead>
-                        </div>
-                    </div>
+
+                <div class="issues-container third-issue">
+                    <p class="issues-header">
+                        Issue #3
+                    </p>
+                    <p class="issues-explained">
+                        <strong>"Upgrades people, upgrades!"</strong>  Do some necessary upgrades and explore the wonders on Bootstrap 5 by modifying this template
+                    </p>
+
                 </div>
-                <div class = "col-md-5">
-                    <div class="card text-white bg-dark mx-4 mb-1">
-                        <div class="card-body">
-                        <h4 class="card-title"><strong>Issue #4</strong></h4>
-                        <lead class="card-text"><strong>"We do a little trolling"</strong> Hide a link to download DCHP++ somewhere inconspicous in the website to suprise DevDino. (Check the README file)</lead>
-                        </div>
-                    </div>
+                <div class="issues-container fourth-issue">
+                    <p class="issues-header">
+                        Issue #4
+                    </p>
+                    <p class="issues-explained">
+                        <strong>"We do a little trolling"</strong>  Hide a link to download DCHP++ somewhere inconspicous in the website to suprise DevDino. (Check the README file)
+                    </p>
                 </div>
             </div>
-        </div>
 
+        </div>
         <!-- Footer -->
         <h5 class = "text-center mt-3">Find us elsewhere:</h5>
-        <div class = "justify-content-center">
+        <div class = "social-icons">
             <a href = "https://github.com/NTUDevSoc" target = "_blank" class="fab fa-fw fa-github fa-2x socials"></a>
             <a href = "https://www.linkedin.com/groups/8860819/" target = "_blank" class="fa fa-fw fa-linkedin fa-2x socials"></a>
             <a href = "https://www.facebook.com/ntudevsoc" target = "_blank" class="fab fa-fw fa-facebook-square fa-2x socials"></a>
@@ -95,6 +122,6 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script src="Javascript.js"></script>
+        <script src="JS folder/app.js"></script>
     </body>
 </html>
